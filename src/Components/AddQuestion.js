@@ -1,0 +1,62 @@
+import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { ADD_QUESTIONS, USER_TOTAL_SCORE } from '../redux/actions'
+import { useNavigate } from 'react-router-dom'
+import { generateUID } from '../_Data'
+import NavBar from './NavBar'
+import '../index.css'
+
+export default function AddQuestion () {
+  const [optionOneValue, setOptionOneValue] = useState('')
+  const [optionTwoValue, setOptionTwoValue] = useState('')
+  const currentUser = useSelector(state => state.currentUser)
+
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  const handleSubmit = event => {
+    event.preventDefault()
+
+    if (optionOneValue === '' || optionTwoValue === '') {
+      return
+    }
+
+    dispatch({
+      type: ADD_QUESTIONS,
+      optionOneText: optionOneValue,
+      optionTwoText: optionTwoValue,
+      randomId: generateUID()
+    })
+    dispatch({ type: USER_TOTAL_SCORE, payload: currentUser[0].id })
+    navigate('/', { replace: true })
+  }
+
+  return (
+    <>
+      <NavBar />
+      <div className='account-add-question'>
+        <form onSubmit={handleSubmit}>
+          <h2 style={{ margin: '0 0 15px 0' }}>Would You Rather...</h2>
+          <div>
+            <input className='option'
+              type='text' placeholder='first option'
+              value={optionOneValue}
+              onChange={e => setOptionOneValue(e.target.value)}
+            />
+            </div>
+            <p style={{textAlign:'center', fontSize: 20, padding: 10}}>Or</p>
+            <div>
+            <input className='option' 
+              type='text' placeholder='second option'
+              value={optionTwoValue}
+              onChange={e => setOptionTwoValue(e.target.value)}
+            />
+          </div>
+          <button className='button-addquestion'>
+           Add Question
+          </button>
+        </form>
+      </div>
+    </>
+  )
+}

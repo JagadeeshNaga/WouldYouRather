@@ -1,0 +1,436 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+.account-signin {
+    text-align: center; 
+    width: 50%;
+    height: 100%;
+    padding:30px; 
+}
+
+.account-header {
+  color: #000000;
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+.account-subtext {
+  color: #000000;
+  font-size: 24px; 
+  padding-bottom: 10px;
+}
+
+.account-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 55%;    
+}
+
+img {
+    width: 100px;
+}
+
+.account-navigation {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 20px;
+}
+.account-navigation-bar {
+ display: flex;
+ flex-direction: row;
+ align-items: flex-end;
+ background-color: #340244;
+ justify-content: space-evenly;
+ width: 100%;
+ height: 100px;
+}
+
+.navigation {
+    display: flex;
+    background-color: tan;
+    padding: 20px;
+    color: black;
+}
+
+.question1 {
+    display: inline-block;
+    background-color: rgb(236, 236, 236);
+    width: 33vw;
+    align-items: center;
+    justify-content: space-around;
+    margin:10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding:10px;
+}
+.question1-image {
+    text-align: center;
+}
+
+.option-one {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.option-two {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(208, 111, 208);
+}
+
+.account-links {
+    display: flex;
+    height: 48px;
+}
+
+.account-logout{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.account-logout-profile{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.logout-button{
+    display: flex;
+    height: 36px;
+    width: 100px;
+}
+
+.logout-img{
+    width: 48px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff9933;
+}
+
+li {
+    list-style: none;
+}
+
+.user-div {
+  width: 100%;
+}
+
+.nav-left{
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+    font-size: 26px;
+    margin-left: 20px;
+    padding:10px;
+}
+.loginuser {
+  text-align: center;
+  margin: 10px;
+}
+.questions{
+    display: inline-grid;
+    height: 100%;
+    width: 100%;
+}
+
+.account-imagename{
+    text-align: center;
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    font-size: 32px;
+}
+
+.question-options{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.account-add-question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 10px;
+    width: 50vw;
+    height: 40vh;
+}
+
+.option {
+    font-size:30px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.link-add{
+    text-decoration: none;
+    background-color: #340244;
+    color: #dab4e6;
+    font-size: 36px;
+    -webkit-text-stroke: .5px #680488;
+}
+
+.form-sign-in select{
+    width: 100px;
+    height: 33px;
+}
+
+.signinform {
+  padding: 10px;
+  display: inline-grid;
+  margin-bottom: 10px;
+}
+
+.account-select {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "azo_sansregular", sans-serif;
+  color: #50a2d9;
+  border: 1px solid #50a2d9;
+  margin-bottom: 0.5em;
+}
+
+.Form {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: 2em;
+  width: 50%;
+  display: inline-block;
+  padding: 20px;
+}
+
+.button-sign-in{
+  padding: 0.5em;
+  text-align: center;
+  color: #fff;
+  background: #ff9933;
+  outline: 1px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 100%;
+  font-size: 0.66667em;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.button-userlogin{
+  padding: 0.5em;
+  text-align: center;
+  color: #fff;
+  background: #ff9933;
+  outline: 1px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 25%;
+  font-size: 0.66667em;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-size: 15px;
+}
+.button-addquestion{
+    padding: 0.5em;
+    text-align: center;
+    color: #fff;
+    background: #ff9933;
+    outline: 1px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 100%;
+    font-size: 0.66667em;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 15px;
+    margin: 10px 0;
+
+  }
+.button-answer{
+    padding: 0.5em;
+    text-align: center;
+    color: #fff;
+    background: #4e91ff;
+    outline: 1px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.66667em;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  .button-answer1{
+    padding: 0.5em;
+    text-align: center;
+    color: #fff;
+    background: #4e91ff;
+    outline: 1px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.66667em;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 15px;
+    margin-left: 43%;
+    margin-top: 10px;
+  }
+  .button-unanswer{
+    padding: 0.5em;
+    text-align: center;
+    color: #fff;
+    background: #6adf6a;
+    outline: 1px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.66667em;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 15px;
+  }
+
+
+.account-select-submit{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.leader {
+    gap: 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.account-answer-question{
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    align-items:center;
+    margin: 15px;
+    padding:15px;
+    width: 39vw;
+    gap: 25px;
+}
+
+.answer-option {
+    font-size:19px;
+    text-align: left;
+}
+
+.account-results-details{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 26vh;
+    width: 35vw;
+}
+.rather {
+    padding:10px 0px;
+}
+.account-question-options {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 5px;
+    gap: 20px;
+    margin:10px 0px;
+}
+.account-option-one{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.account-results-options{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+ 
+  width: 95%;
+}
+
+.answer-question-form{
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 9px;
+
+    width: 37vw;
+    margin-top: 6px;
+}
+
+.account-option-one-score{
+    height: 100%;
+    width: 100%;
+    background-color: #50a2d9;
+}
+
+.account-percentage-one-text{
+    position: absolute;
+    left: 45%;
+}
+
+.filter-button{
+    width: 200px;
+    height: 33px;
+}
+
+.account-toggle-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+}
+
